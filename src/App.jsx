@@ -1,6 +1,7 @@
 import './App.css'
 import Banner from './assets/Components/Banner/Banner'
 import Header from './assets/Components/Header/Header'
+import Our from './assets/Components/Our/Our'
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header></Header>
       <Banner></Banner>
+      <Our></Our>
       
     </>
   )

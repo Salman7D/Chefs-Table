@@ -32,7 +32,7 @@ const Header = () => {
         <input className="rounded-3xl bg-[#15B22D0D] w-[260px] px-6 py-3" type="text" placeholder="Search"/>
     </div>
     <button>
-        <img src="/src/assets/Images/Frame 5.png" alt="" />
+        <img src="/public/Images/Frame 5.png" alt="" />
     </button>
     
   </div>
