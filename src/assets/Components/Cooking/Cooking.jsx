@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Cooking = ({cooking}) => {
     return (
         <div>
-            <p>Currently Cooking: {cooking.length}</p>
+            <p className='text-[#282828] text-2xl font-semibold'>Currently Cooking: {cooking.length}</p>
         </div>
     );
 };

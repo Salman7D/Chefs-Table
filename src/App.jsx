@@ -7,6 +7,9 @@ import { useState } from 'react'
 import SingleFood from './assets/Components/SingleFood/SingleFood'
 import WantToCook from './assets/Components/WantToCook/WantToCook'
 import Cooking from './assets/Components/Cooking/Cooking'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 function App() {
 
@@ -28,7 +31,7 @@ function App() {
       setCart([...cart,p]);
     }
     else{
-      alert("Already added");
+      toast.error("Already added");
     }
   };
 
@@ -62,48 +65,48 @@ function App() {
 
 
         <div className='cart-container border border-solid border-[#28282833] rounded-2xl w-[514px] h-[685px] p-7'>
-          <h3 className='ml-[156px] mb-5'><WantToCook cart={cart}></WantToCook> </h3>
+          <h3 className='text-center mb-5'><WantToCook cart={cart}></WantToCook> </h3>
           <div className='bg-[#28282826] h-[1px] w-[350px] mb-6 ml-[40px]'>
 
           </div>
           <div className='flex justify-around mb-6'>
-            <p>Name</p>
-            <p>Time</p>
-            <p>Calories</p>
+            <p className='text-[#878787] text-base font-medium'>Name</p>
+            <p className='text-[#878787] text-base font-medium'>Time</p>
+            <p className='text-[#878787] text-base font-medium'>Calories</p>
           </div>
 
           <div>
             {
               cart.map((item, index) => (
                 <div key={item.recipe_id} className='flex justify-around mb-4'>
-                   <p>{index+1}</p>
-                   <p>{item.recipe_name}</p>
-                  <p>{item.preparing_time}</p>
-                  <p>{item.calories}</p>
-                  <button onClick={() => {handleDelete(item.recipe_id)}} className="btn btn-error">Error</button>
+                   <p className='text-[#282828CC] text-base font-semibold'>{index+1}</p>
+                   <p className='text-[#282828B3] text-base font-normal'>{item.recipe_name}</p>
+                  <p className='text-[#282828B3] text-base font-normal'>{item.preparing_time}</p>
+                  <p className='text-[#282828B3] text-base font-normal'>{item.calories}</p>
+                  <button onClick={() => {handleDelete(item.recipe_id)}} className="p-2 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-lg font-medium">Preparing</button>
                   
                 </div>
               ))}
           </div>
-
+          
           <div className='currently-cooking'>
-            <h3 className='ml-[156px] mb-5'><Cooking cooking={cooking}></Cooking></h3>
+            <h3 className='text-center mb-5'><Cooking cooking={cooking}></Cooking></h3>
             <div className='bg-[#28282826] h-[1px] w-[350px] mb-6 ml-[40px]'>
 
             </div>
             <div className='flex justify-around mb-4'>
-              <p>Name</p>
-              <p>Time</p>
-              <p>Calories</p>
+              <p className='text-[#878787] text-base font-medium'>Name</p>
+              <p className='text-[#878787] text-base font-medium'>Time</p>
+              <p className='text-[#878787] text-base font-medium'>Calories</p>
             </div>
 
             {
               cooking.map((item, index) => (
                 <div key={item.recipe_id} className='flex justify-around mb-4'>
-                  <p>{index+1}</p>
-                  <p>{item.recipe_name}</p>
-                  <p>{item.preparing_time}</p>
-                  <p>{item.calories}</p>
+                  <p className='text-[#282828CC] text-base font-semibold'>{index+1}</p>
+                  <p className='text-[#282828B3] text-base font-normal'>{item.recipe_name}</p>
+                  <p className='text-[#282828B3] text-base font-normal'>{item.preparing_time}</p>
+                  <p className='text-[#282828B3] text-base font-normal'>{item.calories}</p>
                 </div>
               ))
             }
@@ -117,7 +120,7 @@ function App() {
       
 
 
-      
+      <ToastContainer></ToastContainer>
     </>
   )
 }

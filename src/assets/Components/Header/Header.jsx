@@ -15,24 +15,24 @@ const Header = () => {
 
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Recipe Calories</a>
+    <a className="btn btn-ghost text-[#150B2B] text-3xl font-bold">Recipe Calories</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
 
-        <button className="mr-7">Home</button>
-        <button className="mr-7">Recipes</button>
-        <button className="mr-7">About</button>
-        <button>Search</button>
+        <button className="mr-7 text-[#150B2BB2] text-base font-normal">Home</button>
+        <button className="mr-7 text-[#150B2BB2] text-base font-normal">Recipes</button>
+        <button className="mr-7 text-[#150B2BB2] text-base font-normal">About</button>
+        <button className="text-[#150B2BB2] text-base font-normal">Search</button>
 
     </ul>
   </div>
   <div className="navbar-end">
     <div className="mr-2">
-        <input className="rounded-3xl bg-[#15B22D0D] w-[260px] px-6 py-3" type="text" placeholder="Search"/>
+        <input className="rounded-3xl bg-[#15B22D0D] w-[260px] px-6 py-3 text-[#150B2BB2] text-base font-normal" type="text" placeholder="Search"/>
     </div>
     <button>
-        <img src="/public/Images/Frame 5.png" alt="" />
+        <img src="/src/assets/Images/Frame 5.png" alt="" />
     </button>
     
   </div>

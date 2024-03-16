@@ -12,7 +12,7 @@
       ],
       "preparing_time": "30 minutes",
       "calories": "320 calories",
-      "recipe_image": "lemon_garlic_chicken.jpg"
+      "recipe_image": "https://res.cloudinary.com/doulo6qvd/image/upload/v1710603918/vkbmtlyi2ceprabzxxmu.jpg"
     },
     {
       "recipe_id": "002",
@@ -28,7 +28,7 @@
       ],
       "preparing_time": "25 minutes",
       "calories": "210 calories",
-      "recipe_image": "vegetable_stir_fry.jpg"
+      "recipe_image": "https://res.cloudinary.com/doulo6qvd/image/upload/v1710604063/sdllubsuy0nr7eafyhoq.jpg"
     },
     {
       "recipe_id": "003",
@@ -43,7 +43,7 @@
       ],
       "preparing_time": "20 minutes",
       "calories": "450 calories",
-      "recipe_image": "spaghetti_carbonara.jpg"
+      "recipe_image": "https://res.cloudinary.com/doulo6qvd/image/upload/v1710604038/jv7rdywwlya8jd3idtbc.jpg"
     },
     {
       "recipe_id": "004",
@@ -59,7 +59,7 @@
       ],
       "preparing_time": "35 minutes",
       "calories": "380 calories",
-      "recipe_image": "homemade_pizza.jpg"
+      "recipe_image": "https://res.cloudinary.com/doulo6qvd/image/upload/v1710604322/tyuzx2ogiysf8y430kks.jpg"
     },
     {
       "recipe_id": "005",
@@ -74,7 +74,7 @@
       ],
       "preparing_time": "10 minutes",
       "calories": "250 calories",
-      "recipe_image": "smoothie_bowl.jpg"
+      "recipe_image": "https://res.cloudinary.com/doulo6qvd/image/upload/v1710603875/mjzlzczt3drykavwnw2a.jpg"
     },
     {
       "recipe_id": "006",
@@ -91,7 +91,7 @@
       ],
       "preparing_time": "15 minutes",
       "calories": "280 calories",
-      "recipe_image": "quinoa_salad.jpg"
+      "recipe_image": "https://res.cloudinary.com/doulo6qvd/image/upload/v1710604678/b3q8qs3gvoaa9ujzzrii.jpg"
     }
   ]
   
