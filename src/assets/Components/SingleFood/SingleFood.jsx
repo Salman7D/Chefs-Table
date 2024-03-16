@@ -41,7 +41,8 @@ const SingleFood = ({product, handleCart}) => {
 
 SingleFood.propTypes = {
     product:PropTypes.object,
-    handleCart:PropTypes.func
+    handleCart:PropTypes.func,
+    
 }
 
 export default SingleFood;
