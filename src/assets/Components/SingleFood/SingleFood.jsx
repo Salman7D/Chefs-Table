@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const SingleFood = ({product}) => {
-    console.log(product);
+const SingleFood = ({product, handleCart}) => {
+    // console.log(handleCart);
     return (
         <div>
             
@@ -28,7 +28,7 @@ const SingleFood = ({product}) => {
               </div>
             </div>
 
-            <button className="btn btn-success">Success</button>
+            <button onClick={() => handleCart(product)} className="btn btn-success">Success</button>
 
 
           </div>
@@ -40,7 +40,8 @@ const SingleFood = ({product}) => {
 };
 
 SingleFood.propTypes = {
-    product:PropTypes.object
+    product:PropTypes.object,
+    handleCart:PropTypes.func
 }
 
 export default SingleFood;
