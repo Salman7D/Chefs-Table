@@ -13,7 +13,14 @@ const SingleFood = ({product, handleCart}) => {
 
             </div>
             <p className='mb-1 text-[#282828] text-lg font-medium'>ingredients: {product.ingredients.length}</p>
-            <p className='mb-4 text-[#878787] text-lg font-normal'>{product.ingredients}</p>
+            {/* <p className='mb-4 text-[#878787] text-lg font-normal'>{product.ingredients}</p> */}
+            
+            <ul className='mb-4 text-[#878787] text-lg font-normal'>
+              {product.ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+              ))}
+              </ul>
+
             <div className='bg-[#2828281A] h-[1px] w-[330px] mb-6'>
 
             </div>
@@ -28,7 +35,7 @@ const SingleFood = ({product, handleCart}) => {
               </div>
             </div>
 
-            <button onClick={() => handleCart(product)} className="p-2 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-lg font-medium">Want to Cook</button>
+            <button onClick={() => handleCart(product)} className="p-2 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-lg font-medium btn btn-success">Want to Cook</button>
 
 
           </div>

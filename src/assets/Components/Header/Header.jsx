@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 p-14 mb-[64px]">
+            <div className="navbar bg-base-100 p-20 mb-[40px]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,9 +28,18 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <div className="mr-2">
+    {/* <div className="mr-2 flex relative">
+       
         <input className="rounded-3xl bg-[#15B22D0D] w-[260px] px-6 py-3 text-[#150B2BB2] text-base font-normal" type="text" placeholder="Search"/>
-    </div>
+        <i className="absolute top-1/2 left-4 transform -translate-y-1/2">
+          <img src="/src/assets/Images/Frame.png" alt="" />
+        </i>
+    </div> */}
+
+      <label className="rounded-3xl border-none bg-[#15B22D0D] w-[260px] px-6 py-3 text-[#150B2BB2] text-base font-normal input input-bordered flex items-center gap-2 mr-3">
+        <img src="/src/assets/Images/Frame.png" alt="" />
+        <input className="grow" type="text" placeholder="Search" />
+      </label>
     <button>
         <img src="/src/assets/Images/Frame 5.png" alt="" />
     </button>

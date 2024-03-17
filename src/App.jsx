@@ -83,7 +83,7 @@ function App() {
                    <p className='text-[#282828B3] text-base font-normal'>{item.recipe_name}</p>
                   <p className='text-[#282828B3] text-base font-normal'>{item.preparing_time}</p>
                   <p className='text-[#282828B3] text-base font-normal'>{item.calories}</p>
-                  <button onClick={() => {handleDelete(item.recipe_id)}} className="p-2 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-lg font-medium">Preparing</button>
+                  <button onClick={() => {handleDelete(item.recipe_id)}} className="p-2 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-lg font-medium btn btn-success">Preparing</button>
                   
                 </div>
               ))}
