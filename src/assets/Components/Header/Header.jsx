@@ -1,3 +1,7 @@
+import myImage from '/src/assets/Images/Frame.png' 
+import btn from '/src/assets/Images/Frame 5.png'
+
+
 const Header = () => {
     return (
         <div>
@@ -37,11 +41,11 @@ const Header = () => {
     </div> */}
 
       <label className="rounded-3xl border-none bg-[#15B22D0D] w-[260px] px-6 py-3 text-[#150B2BB2] text-base font-normal input input-bordered flex items-center gap-2 mr-3">
-        <img src="/src/assets/Images/Frame.png" alt="" />
+        <img src={myImage} alt="" />
         <input className="grow" type="text" placeholder="Search" />
       </label>
     <button>
-        <img src="/src/assets/Images/Frame 5.png" alt="" />
+        <img src={btn} alt="" />
     </button>
     
   </div>
