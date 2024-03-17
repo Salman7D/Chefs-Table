@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import fire from '/src/assets/Images/Fire.png'
+import clock from '/src/assets/Images/Clock.png'
 
 const SingleFood = ({product, handleCart}) => {
     // console.log(handleCart);
@@ -26,11 +28,11 @@ const SingleFood = ({product, handleCart}) => {
             </div>
             <div className='flex gap-3 mb-6'>
               <div className='flex'>
-                <img src="/src/assets/Images/Clock.png" alt="" />
+                <img src={clock} alt="" />
                 <p className='text-[#282828CC] text-base font-normal'>{product.preparing_time}</p>
               </div>
               <div className='flex'>
-                <img src="/src/assets/Images/Fire.png" alt="" />
+                <img src={fire} alt="" />
                 <p className='text-[#282828CC] text-base font-normal'>{product.calories}</p>
               </div>
             </div>
